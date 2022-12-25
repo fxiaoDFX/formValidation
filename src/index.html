@@ -7,5 +7,46 @@
     </head>
     <body>
         <h1>Form Validation</h1>
+        <form action="" class="user-info-form">
+            <h3>Name</h3>
+            <span>Please fill in all the required fields</span>
+            <label for="first-name">FIRST NAME</label>
+            <input
+                type="text"
+                id="first-name"
+                name="first-name-input"
+                placeholder="First Name"
+                required
+            />
+            <label for="last-name">LAST NAME</label>
+            <input
+                type="text"
+                id="last-name"
+                name="last-name-input"
+                placeholder="Last Name"
+                required
+            />
+            <label for="email">EMAIL</label>
+            <input
+                type="text"
+                id="email"
+                name="email-input"
+                placeholder="Email"
+                required
+            />
+            <br />
+            <h3>Address</h3>
+            <label for=""></label>
+            <input type="text" placeholder="Street Address" required />
+
+            <label for=""></label>
+            <input type="text" placeholder="City" required />
+
+            <label for=""></label>
+            <input type="text" placeholder="State" required />
+
+            <label for=""></label>
+            <input type="number" placeholder="Zip Code" required />
+        </form>
     </body>
 </html>
