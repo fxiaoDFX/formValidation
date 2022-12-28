@@ -1,3 +1,49 @@
 body {
     background: gray;
 }
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+    grid-template-areas: "span span" "name name" "email ." "address address";
+}
+
+span {
+    grid-area: span;
+}
+
+.form.section.name {
+    grid-area: name;
+}
+
+#email {
+    grid-area: email;
+    width: 200px;
+}
+
+.form.section.address {
+    grid-area: address;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address h3 {
+    flex: 1 0 100%;
+}
+
+form input {
+    margin: 16px;
+    width: 200px;
+}
+
+select {
+    height: 25px;
+    align-self: center;
+    margin: 16px;
+}
+
+button {
+    width: 200px;
+    margin: 16px;
+}
